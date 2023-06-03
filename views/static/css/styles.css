@@ -11911,3 +11911,38 @@ html {
     left: -2vw;
   }
 }
+
+.ck-editor__editable_inline {
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+
+#aboutbox > p {
+  margin-bottom: 0px;
+}
+#aboutbox > ul {
+  margin-bottom: 0px;
+}
+
+#regulationbox > p {
+  margin-bottom: 0px;
+}
+#regulationbox > ul {
+  margin-bottom: 0px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-tiny {
+  font-size: 12px;
+}
+
+.text-big {
+  font-size: 18px;
+}
+
+.text-huge {
+  font-size: 22px;
+}

@@ -1,0 +1,88 @@
+<%- include('./include/header.ejs') %>
+    <section class="py-5">
+        <div class="container px-5">
+            <!-- Contact form-->
+            <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i
+                            class="bi bi-database-add"></i></div>
+                    <h1 class="fw-bolder">페이지를 관리합니다.</h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div>
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="teamName" type="text" value="<%= info.team %>"
+                                    placeholder="Enter your name..." />
+                                <label for="teamName">팀명</label>
+                            </div>
+                            <div class="form-floating mb-5">
+                                <input class="form-control" id="teamURL" type="text" readonly />
+                                <label for="teamName">팀 페이지 url</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="LDname" type="text" value="<%= info.leadername %>" />
+                                <label>팀장 이름</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="LDphone" type="tel" value="<%= info.leaderphone %>" />
+                                <label>팀장 연락처</label>
+                            </div>
+                            <div class="form-floating mb-5">
+                                <input class="form-control" id="LDemail" type="email" value="<%= info.leaderemail %>" />
+                                <label>팀장 이메일</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="SLDname" type="text"
+                                    value="<%= info.subleadername %>" />
+                                <label>부팀장 이름</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="SLDphone" type="tel"
+                                    value="<%= info.subleaderphone %>" />
+                                <label>부팀장 연락처</label>
+                            </div>
+                            <div class="form-floating mb-5">
+                                <input class="form-control" id="SLDemail" type="email"
+                                    value="<%= info.subleaderemail %>" />
+                                <label>부팀장 이메일</label>
+                            </div>
+                            <h4 class="text-secondary fw-bolder">About</h4>
+                            <div class="text-muted mb-4" style="font-size: 14px;">
+                                앞으로 함께할 우리 팀을 소개합니다.
+                            </div>
+                            <div id="Abouteditor"></div>
+
+                            <h4 class="text-danger fw-bolder mt-5">Regulation</h4>
+                            <div class="text-muted mb-4" style="font-size: 14px;">
+                                우리 팀은 앞으로 이러한 <b>팀 내 규정</b>을 준수해야 합니다.
+                            </div>
+                            <div id="Regulationeditor"></div>
+                            <div class="form-floating mt-5 mb-3">
+                                <input class="form-control" id="opentalkURL" type="text"
+                                    value="<%= info.opentalkurl %>" />
+                                <label>카카오톡 오픈톡 URL</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="opentalkcode" type="text"
+                                    value="<%= info.opentalkcode %>" />
+                                <label>카카오톡 오픈톡 입장코드</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="opentalknick" type="text"
+                                    value="<%= info.opentalk %>" />
+                                <label>카카오톡 오픈톡 입장 전 닉네임 규칙</label>
+                            </div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="createBtn">저장</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="../js/pageCreate.js"></script>
+
+    <%- include('./include/footer.ejs') %>

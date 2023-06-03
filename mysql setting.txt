@@ -1,0 +1,4 @@
+CREATE DATABASE businessNews default CHARACTER SET UTF8; 
+CREATE USER 'inhanbyeol'@'localhost' IDENTIFIED BY 'qwe123@@';
+GRANT ALL PRIVILEGES ON businessNews.* TO 'inhanbyeol'@'localhost';
+FLUSH PRIVILEGES;

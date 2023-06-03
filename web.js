@@ -27,10 +27,13 @@ app.use(
   })
 );
 
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes/views'));
+app.use('/create', require('./routes/create'));
+app.use('/login', require('./routes/login'));
+app.use('/pageadmin', require('./routes/pageadmin'));
 
-app.get('/', (req, res) => {
-  res.render('index', { page: { title: 'Business News' } });
+app.use((req, res, next) => {
+  return res.render('404');
 });
 
 app.listen(PORT, (err) => {

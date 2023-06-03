@@ -1,0 +1,35 @@
+<%- include('./include/header.ejs') %>
+    <section class="py-5">
+        <div class="container px-5">
+            <!-- Contact form-->
+            <div class="bg-light rounded-4 py-5 px-4 px-md-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i
+                            class="bi bi-fingerprint"></i></div>
+                    <h1 class="fw-bolder">관리자 로그인</h1>
+                    <p class="lead fw-normal text-muted mb-0">관리자 계정이 필요하신 경우 담당자에게 문의해 주세요.</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div>
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="username" type="text"
+                                    placeholder="Enter your name..." />
+                                <label for="name">사용자 이름</label>
+                            </div>
+                            <!-- Password input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="password" type="password" placeholder="-" />
+                                <label for="password">패스워드를 입력해 주세요.</label>
+                            </div>
+                        </div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="loginBtn">로그인</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/login.js"></script>
+    <%- include('./include/footer.ejs') %>
